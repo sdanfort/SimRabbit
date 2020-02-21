@@ -3,7 +3,7 @@ function [ thSim, xSim, dxSim, x0 ] = load_gait_library( idx )
 %load the gait library and return an x-trajectory.
 
 %Input is idx, between 1 and 46.
-%Lower idx-values correspond to narrower step witdths.
+%Lower idx-values correspond to narrower step widtths.
 
 %load FROST gaits
 obj_ = load('Data/RabbitGaits_og');
@@ -19,6 +19,9 @@ uTraj = zeros(nTrajs, nNodes,4);
 
 timeMeshgrid = zeros(nTrajs,nNodes);
 
+%note: we don't actually have to load all of them if you just want one 
+%for this function output hahaha
+%but here's how you could if you needed
 for i = 1:nTrajs
 
     %getting into the 5-DOF form we have depicted in the paper
