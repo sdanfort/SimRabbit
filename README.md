@@ -1,16 +1,14 @@
 # SimRabbit
 
-This repo includes some basic Rabbit model simulation.
+This repo provides an exmaple for simulating several gaits of a five-link Rabbit model (see https://web.eecs.umich.edu/~grizzle/CDC_2004_Running/Chevallereau_CDC_2004_submission.pdf for model specifics).
 
 Run 'sim_rabbit_gait.m' to get everything started.
 
-I've included a "data" folder that has a library of FROST gaits, 
-as well as a function that loads the FROST gaits and gets them into a usable format.
+I've included a "data" folder that has a library of walking gaits found with FROST (https://ayonga.github.io/frost-dev/), 
+as well as a function that loads the FROST gaits and puts them into a usable format.
 
-The function 'animateRabbit' draws links, and you can use it to figure out how to go from local to global locations.
+The function 'animateRabbit' draws the links.
 
-Exploring the various parts of 'sim_rabbit_gait.m' and functions called there should
-help get a handle on the Rabbit simulation framework.
+The 'sim_rabbit_gait.m' function should help users understand the Rabbit simulation framework.
 
-The folders "SRC", "rabbit_sim_files", and "autogen" contain various functions for simulation that I didn't feel like sorting
-So, a lot of them may be useless for this application.
+The folders "SRC", "rabbit_sim_files", and "autogen" may contain functions that are not useful for this application.
